@@ -3,7 +3,7 @@
 ***********************************/
 
 body {
-    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif, 'Roboto';
     background: #e8e8e8;
 }
 
@@ -25,6 +25,12 @@ header h1 {
     color: whitesmoke;
 }
 
+header {
+  padding-top: 40px;
+  background: #ffa949 url('../img/mtn-landscape.jpg') no-repeat center;
+  background-size: cover;
+}
+
 /* Remove underline */
 header a {
     text-decoration: none; 
@@ -39,14 +45,25 @@ header a:hover {
     color: powderblue;
 }
 
+.header-hr {
+    width: 95%;
+}
+
 /***********************************
  ** NAVIGATION
  ***********************************/
+/* Center navigation in the window */
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
 /* Get rid of the bullets */
 nav ul {
     list-style: none;
-    text-align: center;
-    display: inline;
+    margin: 0 10px;
+    padding: 0;
 }
 
 /* All in one line, leave enough space for clicking */
@@ -61,7 +78,8 @@ nav a {
     color: whitesmoke;
 }
 
-nav a:selected {
+nav a.selected {
+    display: inline-block;
     color: powderblue;
 }
 
@@ -69,10 +87,16 @@ nav a:hover {
     color: powderblue;
 }
 
-.header-nav {
-/*    background-color: blue; */
+/* Hide the link that should open and close the nav on small screens */
+nav .icon {
+  display: none;
 }
-
+.dropdown-content {
+  display: none;
+}
+.dropdown-button {
+  display: none;
+}
 
 /***********************************
  ** SECTION
@@ -86,7 +110,6 @@ nav a:hover {
     margin: 0 auto;
     padding: 0 5%;
 	  font-size: 1.1rem;
-    background: darkgreen;
     color: black;
 }
 
@@ -111,7 +134,7 @@ video, audio {
 blockquote {
 	  width: 100%;
     display: block;
-    background: #fff;
+    background: darkseagreen4;
     padding: 15px 20px 15px 45px;
     margin: 0 0 20px;
     position: relative;
@@ -120,7 +143,7 @@ blockquote {
     /* font-family: Georgia, serif; */
     font-size: 16px;
     line-height: 1.2;
-    color: #666;
+    color: grey10;
     text-align: justify;
     
     /*Borders - (Optional)
@@ -139,29 +162,28 @@ blockquote {
  ** FOOTER
  ***********************************/
 .main-footer {
-    background: darkgreen;
-    color: whitesmoke;
+    color: black;
     text-align: center;   
     padding: 1rem auto 1rem;
-    margin: 0;
+    margin: 0px;
 }
 
 .social-icon {
+	  padding: 0px;
     width: 20px;
     height: 20px;
-    margin: 5px 5px;
+    margin: 0px;
 }
 
 #back-footer {
     margin: 5px 5px;	
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    background-color: darkgreen;
 }
 
 /* Remove underline */
 footer a {
     text-decoration: none; 
-    color: whitesmoke;
+    color: black;
 }
 
 footer img {

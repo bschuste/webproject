@@ -12,23 +12,21 @@
         @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- 
-    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
-     -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- icon library mainly for the navigation menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <div class="wrap1">
-      
     <header class="header-nav">
       <h1>Movement Works</h1>
       <a href="index.html" id="logo">
       </a>
+      <hr class="header-hr">
       <nav>
-        <ul>
+        <ul class="topnav">
           <li><a href="index.html" class="selected">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="classes.html">Classes</a></li>
@@ -36,8 +34,23 @@
           <li><a href="individual.html">Individual Sessions</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="resources.html">Resources</a></li>
+          <!-- following is used to show the nav as a menu on small display devices -->
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="showMyMenu()">&#9776;</a>
       </nav>
+      
+      <div class="dropdown">
+        <button class=dropdown-button>&#9776;</button>
+        <ul class="dropdown-content" id="list-nav">
+          <li><a href="index.html" class="dropdown-item">About</a></li>
+          <li><a href="contact.html" class="dropdown-item ">Contact</a></li>
+          <li><a href="classes.html" class="dropdown-item">Classes</a></li>
+          <li><a href="workshops.html" class="dropdown-item">Workshops</a></li>
+          <li><a href="individual.html" class="dropdown-item">Individual Sessions</a></li>
+          <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+          <li><a href="resources.html" class="dropdown-item">Resources</a></li>
+        </ul >
+      </div>
     </header>
 
     <section class="wrapper">
@@ -102,6 +115,7 @@
           I have a herniated disc, but since I have been taking Dorothy&rsquo;s Awareness Through Movement classes, I have no lower back pain at all!
           And I can sit cross legged tailor fashion for the first time since my knee replacement 7 years ago!
         </blockquote>
+        
         <blockquote>
         "Your classes are a very important part of raising my consciousness! 
         When you talk about being aware of how my body would move naturally if I had not been compensating for some ache or injury for a long, long time, 
@@ -117,16 +131,15 @@
         Thank you gifted teacher, Jan B"
         </blockquote>
     </section>
-    
-    </div> <!-- wrap class for sticky footer -->
-      
     <footer class="main-footer">
        <a href="https://www.facebook.com/Feldenkrais-Method-of-Somatic-Education-Practitioner-592330250854862/">
            <img src="img/facebook.svg" alt="facebook contact" class="social-icon">
-       </a> 
+       </a>
 	   <a href="#top" id="back-footer">Back to Top</a>
        <p>&copy; 2017 Dorothy Henning.</p>
     </footer>
     
+    <!-- navigation dropdown menu -->
+    <script src="js/nav.js"></script>
   </body>
 </html>
