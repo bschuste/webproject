@@ -89,20 +89,21 @@ nav a:hover {
 
 /* Hide the link that should open and close the nav on small screens */
 nav .icon {
-  display: none;
+    display: none;
 }
 .dropdown-content {
-  display: none;
+    display: none;
 }
 .dropdown-button {
-  display: none;
+    display: none;
 }
 
 /***********************************
  ** SECTION
  ***********************************/
-.wrapper h1 {
-    font-size: 2.0rem;
+.wrapper h2 {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .wrapper {
@@ -111,11 +112,12 @@ nav .icon {
     padding: 0 5%;
 	  font-size: 1.1rem;
     color: black;
+    text-align: center;
 }
 
 .wrapper .row {
-  display: block-inline;
-	float: right;
+    display: block-inline;
+	  float: right;
 }
 .wrapper ul {
     list-style: none;
