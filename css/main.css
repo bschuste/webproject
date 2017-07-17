@@ -27,7 +27,8 @@ header h1 {
 
 header {
   padding-top: 40px;
-  background: #ffa949 url('../img/mtn-landscape.jpg') no-repeat center;
+/*  background: #ffa949 url('../img/mtn-landscape.jpg') no-repeat center; */
+  background: #ffa949 url('../img/reflection-2339624_960_720.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -46,7 +47,7 @@ header a:hover {
 }
 
 .header-hr {
-    width: 95%;
+    width: 90%;
 }
 
 /***********************************
@@ -112,7 +113,7 @@ nav .icon {
     padding: 0 5%;
 	  font-size: 1.1rem;
     color: black;
-    text-align: center;
+    text-align: justify;
 }
 
 .wrapper .row {
@@ -159,6 +160,26 @@ blockquote {
 }
 
 
+/***********************************
+ ** NEWSLETTER
+ ***********************************/
+/*
+.newsletter {
+    width: 80%;
+    display: block;
+    text-align: center;   
+} */
+#newsletter-form {
+    text-align:center;
+    margin: 0 0 25px 0;
+}
+#newsletter-input {
+    width: 60%;
+    text-align:center;
+}
+#newsletter-ajax {
+	  display: none;
+}
 
 /***********************************
  ** FOOTER
@@ -168,13 +189,31 @@ blockquote {
     text-align: center;   
     padding: 1rem auto 1rem;
     margin: 0px;
+    font-size: 0.8rem;
 }
 
 .social-icon {
-	  padding: 0px;
-    width: 20px;
-    height: 20px;
+    padding: 0;
+    width: 1.1rem;
+    height: auto;
     margin: 0px;
+    color: black;
+    text-decoration: none; 
+    vertical-align: middle;
+}
+
+.phone {
+	  display: inline-block;
+    text-decoration: none; 
+    color: black;
+    vertical-align: middle;
+}
+
+.email {
+    display: inline-block;
+    text-decoration: none; 
+    color: black;
+    vertical-align: middle;
 }
 
 #back-footer {
@@ -221,6 +260,7 @@ section img {
 /* debug 
     border: solid 1px #d9e4ea; */
 }
+
 
 /***********************************
  ** FIXES FLOAT BEHAVIOR: just add this class to the element containing the float(s)

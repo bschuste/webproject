@@ -49,68 +49,48 @@
     </header>
 
     <section class="wrapper">
-      <div class="location">
-        <h2>Visit our Location</h2>
-        <p>161 St. Matthews Ave, Suite 15, Louisville, KY, 40207</p>
-        <div id="map" style="height: 260px;">
-        </div>
+      <div class="name">
+        <h2>Dorothy Henning, Certified Feldenkrais Practitioner </h2>
+        <img src="img/dorothy_photoid.png" style="border-radius: 50%;display:float-left;"alt="Dorothy's picture">
       </div>
-	    <div class="phone">
-		    <h2>Give us a Call</h2>
-		    <a href="tel:502-240-7057">502-240-7057</a>
-        <img src="img/phone.svg" alt="phone contact" class="social-icon">
+	    <div style="display:float-right">
+		    <h3 class="phone">Give me a Call </h3>
+        <img src="img/phone.svg"  class="social-icon phone" alt="phone contact">
+        <a href="tel:502-240-7057" class="phone">502-240-7057</a>
 	    </div>
-	    <div class="email">
-		    <h2>Send us a Message</h2>
-		     <img src="img/mail.svg" alt="email contact" class="social-icon">
-        <a href="mailto:contactdorothy@gmail.com">contactdorothy@gmail.com</a>
+	    <div style="display:float-right">
+		    <h3 class="email">Send me a Message</h3>
+	      <img src="img/mail.svg" alt="email contact" class="social-icon email">
+        <a href="mailto:contactdorothyhenning@gmail.com" class="email">Contact Dorothy</a>
       </div>
+      
+      <hr class="header-hr">
 
       <!-- Mail List -->
-      <div class="newsletter">
-        <h2>Stay informed about Feldenkrais activities</h2>
-        <form action="newsletter" method="post">
-          <label class="newsletter-label">Email</label>
-          <input class="newsletter-input" type="email" placeholder="dooo@dooo.com"></input>
-          <button class="newsletter-button">Submit</button>
+      <div>
+        <h2>Stay informed about Feldenkrais activities in Louisville</h2>
+<!-- The form-handler is typically a server page with a script for processing input data.
+     The form-handler is specified in the form's action attribute: -->
+        <form action="/#newsletterposts" id="newsletter-form" method="post">
+          <label class="newsletter">Email</label>
+          <input class="newsletter" id="newsletter-input" type="email" placeholder="enter your email address" ></input>
+<!--          <button class="newsletter-button" onclick="subscribeNewsletter()">Sign Up Now</button> --> 
+          <button class="newsletter" type="submit">Sign Up Now</button>
         </form>
+        <p id="newsletter-ajax">Thank You!</p>
       </div>
       <!-- /Mail List -->
     
-	  
+	    <hr class="header-hr">
     </section>
     <footer class="main-footer">
        <a href="https://www.facebook.com/Feldenkrais-Method-of-Somatic-Education-Practitioner-592330250854862/">
-           <img src="img/facebook.svg" alt="facebook contact" class="social-icon">
+           <img src="img/footer_facebook.png" alt="facebook contact" class="social-icon">
        </a>
-	   <a href="#top" id="back-footer">Back to Top</a>
+     <a href="#top" id="back-footer">Back to Top</a>
        <p>&copy; 2017 Dorothy Henning.</p>
     </footer>
-    
-    <!-- Google Map javascript -->
-    <script>
-      function initMap() {
-        var coord = {lat: 38.256636, lng: -85.652270};
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: coord,
-          scrollwheel: false,
-          zoom: 15
-        });
-        var marker = new google.maps.Marker({
-        	position: coord,
-        	map: map
-        });
-        //Resize Function
-        google.maps.event.addDomListener(window, "resize", function() {
-          var center = map.getCenter();
-          google.maps.event.trigger(map, "resize");
-          map.setCenter(center);
-        });
-        google.maps.event.addDomListener(window, 'load', initialize);
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5ZSc7hlxHu8rRf_TJRPC6OoceS1yrx9c&callback=initMap"
-    async defer></script>
+    <!-- Javascript code to add text into the Blog page -->
+    <script src="js/news.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

@@ -80,14 +80,12 @@
   nav li:nth-child(6) {
     display: none;
   }
-  .responsive li:nth-child(6) {
-    display: block;
-    text-align: center;
-    text-decoration: none; 
-    list-style: none;
-    margin: 0 10px;
-    padding: 0 0 10px 0;
+/*  .dropdown-content li:nth-last-child(3n+3) {
+    display: none;
   }
+  .dropdown-content li:nth-last-child(3n+4) {
+    display: none;
+  }  */ 
 }
 /* iPad */
 @media screen and (max-width: 767px) {
@@ -96,16 +94,42 @@
   }
   nav .icon {
     display: block;
+    color: black;
+    font-size: 1.2rem;
   }
   nav .icon:hover {
     color: powderblue;
   }
-  .responsive li:nth-child(7) {
+  .dropdown-content li:nth-last-child(2n+2) {
+    display: none;
+  }
+  .dropdown-content li:nth-last-child(2n+3) {
+    display: none;
+  }  
+  .responsive {
+	  display: block;
+    text-align: center;
+    text-decoration: none; 
+    list-style: none;
+    color: black;
+    padding: 0 0 10px 0;
+    margin: 0 10px;
+  }  
+  /*
+  .dropdown-content {
+    display: block;
+    text-align: center;
+    text-decoration: none; 
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0 10px;
+  }  
+  .responsive {
     display: block;
     text-align: center;
     text-decoration: none; 
     list-style: none;
     margin: 0 10px;
     padding: 0 0 10px 0;
-  }
+  } */
 }
