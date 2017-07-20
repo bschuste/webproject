@@ -58,10 +58,9 @@ They are described below. Several of these features have not been completed beca
 # Todo (for the fullstack Javascript class)
 1- Finalize the blog page to connect to a web server and process the content.   
    At this time, the blog entered is added to the current page but disappears when the page is refreshed.
-2- Finalize the contact page with the newsletter registration information to send to a web server.
+2- Finalize the contact page with the newsletter registration information to be sent to a web server.
 3- Add google calendar and an authentication window for the administrator to write into the calendar.
 4- Add registration and payment transactions.
-
 
 # How to add Google Map to your web site
 Go to https://developers.google.com/maps/documentation/javascript/ and select a map style.  

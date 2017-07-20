@@ -116,18 +116,12 @@ nav .icon {
     text-align: justify;
 }
 
-.wrapper .row {
+.row {
     display: block-inline;
 	  float: right;
 }
 .wrapper ul {
     list-style: none;
-}
-    
-video, audio {
-    width: 100%;
-	  margin: 0 auto;
-    display: block;
 }
 
 /***********************************
@@ -159,16 +153,33 @@ blockquote {
     box-shadow: 2px 2px 15px #ccc;
 }
 
+/***********************************
+ ** CONTACT INFO
+ ***********************************/
+.contact {
+    display: inline-block;
+}
+.photo-id {
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.phone {
+    display: inline-block;
+    text-decoration: none; 
+    color: black;
+    vertical-align: middle;
+}
+
+.email {
+    display: inline-block;
+    text-decoration: none; 
+    color: black;
+    vertical-align: middle;
+}
 
 /***********************************
  ** NEWSLETTER
  ***********************************/
-/*
-.newsletter {
-    width: 80%;
-    display: block;
-    text-align: center;   
-} */
 #newsletter-form {
     text-align:center;
     margin: 0 0 25px 0;
@@ -181,6 +192,24 @@ blockquote {
 	  display: none;
 }
 
+/***********************************
+ ** CLASSES
+ ***********************************/
+.atm-classes {  
+    width: 80%;
+    margin: 0 auto 40px;
+    display: block;
+}
+
+/***********************************
+ ** RESOURCES
+ ***********************************/
+#video, #audio {
+    width: 80%;
+    margin: 15px auto;
+    display: block;
+}
+    
 /***********************************
  ** FOOTER
  ***********************************/
@@ -202,19 +231,6 @@ blockquote {
     vertical-align: middle;
 }
 
-.phone {
-	  display: inline-block;
-    text-decoration: none; 
-    color: black;
-    vertical-align: middle;
-}
-
-.email {
-    display: inline-block;
-    text-decoration: none; 
-    color: black;
-    vertical-align: middle;
-}
 
 #back-footer {
     margin: 5px 5px;	

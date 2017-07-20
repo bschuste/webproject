@@ -49,47 +49,46 @@
     </header>
 
     <section class="wrapper">
-      <div class="name">
-        <h2>Dorothy Henning, Certified Feldenkrais Practitioner </h2>
-        <img src="img/dorothy_photoid.png" style="border-radius: 50%;display:float-left;"alt="Dorothy's picture">
+      <h2>Dorothy Henning, Certified Feldenkrais Practitioner </h2>
+
+      <div style="display:float-left;">
+        <img src="img/dorothy_photoid.png" class="photo-id" alt="Dorothy's picture">
       </div>
-	    <div style="display:float-right">
+	    <div>
 		    <h3 class="phone">Give me a Call </h3>
-        <img src="img/phone.svg"  class="social-icon phone" alt="phone contact">
-        <a href="tel:502-240-7057" class="phone">502-240-7057</a>
-	    </div>
-	    <div style="display:float-right">
+        <img src="img/phone.svg"  class="social-icon phone contact" alt="phone contact">
+        <a href="tel:502-240-7057" class="phone contact">502-240-7057</a>
+      </div>
+      <div>
 		    <h3 class="email">Send me a Message</h3>
-	      <img src="img/mail.svg" alt="email contact" class="social-icon email">
-        <a href="mailto:contactdorothyhenning@gmail.com" class="email">Contact Dorothy</a>
+	      <img src="img/mail.svg" alt="email contact" class="social-icon email contact">
+        <a href="mailto:contactdorothyhenning@gmail.com" class="email contact">Contact Dorothy</a>
       </div>
       
       <hr class="header-hr">
 
-      <!-- Mail List -->
+      <!-- Newsletter subscription -->
       <div>
         <h2>Stay informed about Feldenkrais activities in Louisville</h2>
-<!-- The form-handler is typically a server page with a script for processing input data.
-     The form-handler is specified in the form's action attribute: -->
-        <form action="/#newsletterposts" id="newsletter-form" method="post">
+        <form action="thankyou.html" id="newsletter-form" method="post">
           <label class="newsletter">Email</label>
           <input class="newsletter" id="newsletter-input" type="email" placeholder="enter your email address" ></input>
-<!--          <button class="newsletter-button" onclick="subscribeNewsletter()">Sign Up Now</button> --> 
           <button class="newsletter" type="submit">Sign Up Now</button>
         </form>
-        <p id="newsletter-ajax">Thank You!</p>
       </div>
-      <!-- /Mail List -->
-    
+      <!-- /Newsletter subscription -->
+   
 	    <hr class="header-hr">
     </section>
+    
     <footer class="main-footer">
-       <a href="https://www.facebook.com/Feldenkrais-Method-of-Somatic-Education-Practitioner-592330250854862/">
-           <img src="img/footer_facebook.png" alt="facebook contact" class="social-icon">
-       </a>
-     <a href="#top" id="back-footer">Back to Top</a>
-       <p>&copy; 2017 Dorothy Henning.</p>
+      <a href="https://www.facebook.com/Feldenkrais-Method-of-Somatic-Education-Practitioner-592330250854862/">
+        <img src="img/footer_facebook.png" alt="facebook contact" class="social-icon">
+      </a>
+      <a href="#top" id="back-footer">Back to Top</a>
+      <p>&copy; 2017 Dorothy Henning.</p>
     </footer>
+    
     <!-- Javascript code to add text into the Blog page -->
     <script src="js/news.js" type="text/javascript" charset="utf-8"></script>
   </body>
