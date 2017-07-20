@@ -1,23 +1,23 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function showMyMenu() {
     var menu = document.getElementById("list-nav");
-    if (menu.className === "dropdown-content") {
+//    if (menu.className === "dropdown-content") {
     	/* display items with this class */
-  	    menu.className += " responsive";
-    } else {
+//  	    menu.className += " responsive";
+//    } else {
     	/* hide all items */
-  	    menu.className = "dropdown-content";
-    }
-    /*
+//  	    menu.className = "dropdown-content";
+//    }
+    
     for (var i=0; i<menu.children.length; i++) {
     	var name = "dropdown-item" + (i+1);
     	console.log(name);
         if (menu.children[i].className === name) {
         	menu.children[i].className += " responsive";
         } else {
-        	menu.children[i].className = name;
+        	//menu.children[i].className = name;
         }
-    } */
+    }
     var icon = document.getElementsByClassName("icon")[0];
     icon.style.color = 'black';
     icon.style.font = 'bold 1.2rem';
